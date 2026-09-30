@@ -54,6 +54,7 @@ export function login () {
       })
   }
   // vuln-code-snippet end loginAdminChallenge loginBenderChallenge loginJimChallenge
+  // Ravikanth
 
   function verifyPreLoginChallenges (req: Request) {
     challengeUtils.solveIf(challenges.weakPasswordChallenge, () => { return req.body.email === 'admin@' + config.get<string>('application.domain') && req.body.password === 'admin123' })
