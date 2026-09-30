@@ -15,6 +15,7 @@ import { type User } from '../data/types'
 import * as utils from '../lib/utils'
 
 // vuln-code-snippet start loginAdminChallenge loginBenderChallenge loginJimChallenge
+// new
 export function login () {
   function afterLogin (user: User, res: Response, next: NextFunction) {
     verifyPostLoginChallenges(user) // vuln-code-snippet hide-line
